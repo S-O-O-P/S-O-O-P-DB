@@ -3,10 +3,10 @@ INSERT
   INTO
 `LINKBEE_USER`(NICKNAME, EMAIL, GENDER, PROFILE_PIC, ABOUTME, USER_ROLE, SIGNUP_DATE, SIGNUP_PLATFORM)
 VALUES
-	   ('김민국', 'rlaalsrnr@ohgiraffers.com', '남', null, '안녕하세요. 김민국입니다.', 'USER', '2024-06-01', '네이버'),
+       ('김민국', 'rlaalsrnr@ohgiraffers.com', '남', null, '안녕하세요. 김민국입니다.', 'USER', '2024-06-01', '네이버'),
        ('박민국', 'qkralsrnr@ohgiraffers.com',  '남', null, '안녕하세요. 박민국입니다.', 'USER', '2024-06-02', '구글'),
-	   ('이국민', 'dlrnrals@ohgiraffers.com', '남', null, '안녕하세요. 이국민입니다.', 'USER', '2024-06-02', '구글'),
-	   ('최민국', 'chlalsrnr@ohgiraffers.com', '남', null, '안녕하세요. 최민국입니다.', 'USER', '2024-06-02', '구글'),
+       ('이국민', 'dlrnrals@ohgiraffers.com', '남', null, '안녕하세요. 이국민입니다.', 'USER', '2024-06-02', '구글'),
+       ('최민국', 'chlalsrnr@ohgiraffers.com', '남', null, '안녕하세요. 최민국입니다.', 'USER', '2024-06-02', '구글'),
        ('남효정', 'koala@ohgiraffers.com', '여', null, '안녕하세요. 남쪽 효정입니다.', 'USER', '2024-06-03', '구글'),
        ('북효정', 'northkoala@ohgiraffers.com', '여', null, '안녕하세요. 북쪽 효정입니다.', 'USER', '2024-06-03', '카카오'),
        ('관리자', 'admin@admin.com', '여', null, '안녕하세요 유저코드 7번 관리자입니다.', 'ADMIN', '2024-06-06', '몰루'); 
@@ -16,8 +16,8 @@ INSERT
   INTO
 `INTEREST`(INTEREST_NAME)
 VALUES
-	   ('팝업'),
-	   ('공연'),
+       ('팝업'),
+       ('공연'),
        ('행사/축제'),
        ('전시회'),
        ('뮤지컬');
@@ -27,7 +27,7 @@ INSERT
   INTO
 `INTEREST_OF_USER`(USER_CODE, INTEREST_CODE)
 VALUES
-	   (1, 1),
+       (1, 1),
        (1, 2),
        (1, 3),
        (1, 4),
@@ -52,7 +52,7 @@ INSERT
 `EARLY_BIRD`(INTEREST_CODE, EB_TITLE, EB_CONTENT, REGION, POSTER, SELLER, SELLER_LINK, REGULAR_PRICE, DISCOUNT_PRICE,
              SALE_START_DATE, SALE_END_DATE, USAGE_START_DATE, USAGE_END_DATE)
 VALUES
-	   (1, '빠른 대상혁신전 방문기', '대상혁 신전을 50%의 가격으로 방문하여 숭배할 수 있어용.', '서울', null, '인터파크티켓', 'interpark.co.kr', 100000, 50000,
+       (1, '빠른 대상혁신전 방문기', '대상혁 신전을 50%의 가격으로 방문하여 숭배할 수 있어용.', '서울', null, '인터파크티켓', 'interpark.co.kr', 100000, 50000,
         '2024-06-01', '2024-06-10', '2024-06-01', '2024-06-10');
 
 
@@ -61,7 +61,11 @@ INSERT
   INTO
 `HONEYPOT`(INTEREST_CODE, HONEYPOT_TITLE, HONEYPOT_CONTENT, USER_CODE, POSTER, REGION, TOTAL_MEMBER, REG_DATE, EVENT_DATE, END_DATE, VISIBILITY_STATUS, CLOSURE_STATUS, REPORT_COUNT)
 VALUES
+<<<<<<< HEAD
 	   (1, '대상혁님 신전가서 숭배하실분 구합니다.', '대상혁님을 숭배하러 가실 신자들 모집합니다. 찐팬 분들만 오세요', 1, null, '서울', 4, '2024-06-01', '2024-06-11' ,'2024-06-10', '활성화', '모집중', null);
+=======
+       (1, '대상혁님 신전가서 숭배하실분 구합니다.', '대상혁님을 숭배하러 가실 신자들 모집합니다. 찐팬 분들만 오세요', 1, null, '서울', 4, '2024-06-01', '2024-06-10', '활성화', '모집중', null);
+>>>>>>> d38c8adb5707cb28fc7b7af47f4384bf80bfa07c
        
 -- 참가신청 DB
 INSERT
@@ -86,7 +90,7 @@ INSERT
   INTO
 `RATING`(RATING_NAME, SCORE, CONTENT)
 VALUES 
-	   ('못만났어요', 1, '사전 연락 없이 무단으로 모임에 불참했어요.'),
+       ('못만났어요', 1, '사전 연락 없이 무단으로 모임에 불참했어요.'),
        ('못만났어요', 1, '불참 의사를 멤버들에게 알리고 모임에 불참했어요.'),
        ('불편했어요', 2, '시간 약속을 지키지 않아서 다른 사람들이 모두 기다렸어요.'),
        ('불편했어요', 2, '이성에 대한 과도한 관심을 보여서 불편했어요.'),
@@ -107,11 +111,11 @@ INSERT
   INTO
 `INQUIRY`(CATEGORY, TITLE, CONTENT, USER_CODE, INQUIRY_DATE, ADMIN_CODE, ANSWER_STATUS, ANSWER, ANSWER_DATE)
 VALUES
-	   ('서비스', '대상혁이 있나요', '대상혁 신전가면 대상혁도 있나요?', 4, '2024-06-03', 7, '답변대기', null, null),
+       ('서비스', '대상혁이 있나요', '대상혁 신전가면 대상혁도 있나요?', 4, '2024-06-03', 7, '답변대기', null, null),
        ('서비스', '중상혁이 있나요', '중상혁 신전가면 중상혁도 있나요?', 5, '2024-06-04', 7, '답변대기', null, null),
        ('서비스', '소상혁이 있나요', '소상혁 신전가면 소상혁도 있나요?', 6, '2024-06-05', 7, '답변대기', null, null),
        ('기능', '허니팟에선 꿀도 주나요', '어디 양봉장 꿀을 주시나요?', 5, '2024-06-03', 7, '답변대기', null, null),
-	   ('기능', '채찍피티가 뭔가요', '채찍을 맞으면서 피티를 받는 곳인가요?', 6, '2024-06-04', 7, '답변대기', null, null);
+       ('기능', '채찍피티가 뭔가요', '채찍을 맞으면서 피티를 받는 곳인가요?', 6, '2024-06-04', 7, '답변대기', null, null);
        
 -- 공지사항 DB
 INSERT
@@ -129,8 +133,13 @@ INSERT
   INTO
 `COMMENT`(HONEYPOT_CODE, USER_CODE, CONTENT, WRITING_TIME, UPDATE_TIME)
 VALUES
+<<<<<<< HEAD
 	  (1, 6, '몇시에 모여요?', '2024-06-01 09:00:00', null),
       (1, 1, '구마유시에 모입니다. 껄껄', '2024-06-01 09:05:00', null);
+=======
+      (1, 6, '몇시에 모여요?', '2024-06-01 09:00:00'),
+      (1, 1, '구마유시에 모입니다. 껄껄', '2024-06-01 09:05:00');
+>>>>>>> d38c8adb5707cb28fc7b7af47f4384bf80bfa07c
       
 -- 파일 DB 없음
       
