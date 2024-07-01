@@ -59,9 +59,9 @@ VALUES
 -- 허니팟 게시판 테이블 생성
 INSERT
   INTO
-`HONEYPOT`(INTEREST_CODE, HONEYPOT_TITLE, HONEYPOT_CONTENT, USER_CODE, POSTER, REGION, TOTAL_MEMBER, REG_DATE, END_DATE, VISIBILITY_STATUS, CLOSURE_STATUS, REPORT_COUNT)
+`HONEYPOT`(INTEREST_CODE, HONEYPOT_TITLE, HONEYPOT_CONTENT, USER_CODE, POSTER, REGION, TOTAL_MEMBER, REG_DATE, EVENT_DATE, END_DATE, VISIBILITY_STATUS, CLOSURE_STATUS, REPORT_COUNT)
 VALUES
-	   (1, '대상혁님 신전가서 숭배하실분 구합니다.', '대상혁님을 숭배하러 가실 신자들 모집합니다. 찐팬 분들만 오세요', 1, null, '서울', 4, '2024-06-01', '2024-06-10', '활성화', '모집중', null);
+	   (1, '대상혁님 신전가서 숭배하실분 구합니다.', '대상혁님을 숭배하러 가실 신자들 모집합니다. 찐팬 분들만 오세요', 1, null, '서울', 4, '2024-06-01', '2024-06-11' ,'2024-06-10', '활성화', '모집중', null);
        
 -- 참가신청 DB
 INSERT
@@ -127,10 +127,10 @@ INSERT
 -- 댓글 DB
 INSERT
   INTO
-`COMMENT`(HONEYPOT_CODE, USER_CODE, CONTENT, WRITING_TIME)
+`COMMENT`(HONEYPOT_CODE, USER_CODE, CONTENT, WRITING_TIME, UPDATE_TIME)
 VALUES
-	  (1, 6, '몇시에 모여요?', '2024-06-01 09:00:00'),
-      (1, 1, '구마유시에 모입니다. 껄껄', '2024-06-01 09:05:00');
+	  (1, 6, '몇시에 모여요?', '2024-06-01 09:00:00', null),
+      (1, 1, '구마유시에 모입니다. 껄껄', '2024-06-01 09:05:00', null);
       
 -- 파일 DB 없음
       
