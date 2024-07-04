@@ -14,6 +14,15 @@ VALUES
        ('이병건', 'chimhaha@emalnyun.com', '여', 'https://i.ibb.co/BqqgBBp/image.jpg', '안녕하세요. 이병건입니다.', 'USER', '2024-06-09', '구글'),
        ('양세찬', 'ung-efather@cobik.com', '여', 'https://i.ibb.co/Yk4jBmw/image.jpg', '안녕하세요. 양세찬입니다.', 'USER', '2024-06-10', '카카오'),
        ('코하루', 'warkangkang@japan.com', '여', 'https://i.ibb.co/Np2j4f4/image.png', '안녕하세요. 코하루입니다.', 'USER', '2024-06-11', '네이버');
+       
+       
+       
+
+-- LOGIN 테이블 데이터 삽입
+INSERT INTO `LOGIN` (USER_CODE, ID, PASSWORD) VALUES 
+    (7, 'admin', 'admin1');
+
+    
 -- INTEREST(관심사) DB
 INSERT
   INTO
