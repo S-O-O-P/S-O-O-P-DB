@@ -66,10 +66,10 @@ VALUES
 -- 얼리버드 게시판 DB
 INSERT
   INTO
-`EARLY_BIRD`(INTEREST_CODE, EB_TITLE, EB_CONTENT, REGION, POSTER, SELLER, SELLER_LINK, REGULAR_PRICE, DISCOUNT_PRICE,
+`EARLY_BIRD`(INTEREST_CODE, EB_TITLE, EB_CONTENT, REGION, POSTER, DATE_WRITTEN, AGE_LIMIT, PLACE, SELLER, SELLER_LINK, REGULAR_PRICE, DISCOUNT_PRICE,
              SALE_START_DATE, SALE_END_DATE, USAGE_START_DATE, USAGE_END_DATE)
 VALUES
-       (1, '빠른 대상혁신전 방문기', '대상혁 신전을 50%의 가격으로 방문하여 숭배할 수 있어용.', '서울', null, '인터파크티켓', 'interpark.co.kr', 100000, 50000,
+       (1, '빠른 대상혁신전 방문기', '대상혁 신전을 50%의 가격으로 방문하여 숭배할 수 있어용.', '서울', null, '2024-07-05', '전체관람가', 'LoL파크', '인터파크티켓', 'interpark.co.kr', 100000, 50000,
         '2024-06-01', '2024-06-10', '2024-06-01', '2024-06-10');
 
 
