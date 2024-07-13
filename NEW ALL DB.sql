@@ -5,8 +5,9 @@ INSERT
 `LINKBEE_USER`(NICKNAME, EMAIL, GENDER, PROFILE_PIC, ABOUTME, USER_ROLE, SIGNUP_DATE, SIGNUP_PLATFORM)
 VALUES
 	   ('관리자', 'admin@admin.com', '관리자', '관리자', '관리자', 'ROLE_ADMIN', '2024-07-01', 'ADMIN'),
-       ('너굴너굴너굴맨', 'krossjsnet88@naver.com', '남자', 'https://phinf.pstatic.net/contact/20240708_176/1720409807264OBxd6_JPEG/image.jpg', '뀨?', 'ROLE_USER', '2024-07-08', 'naver:6UiaZlGUvWSdzpWSfBzzR06y4TsFfqNtrpbprYYfhoU'),
-       ('카카오굴', 'krossjsnet88@naver.com', '남자', 'http://k.kakaocdn.net/dn/bij2eY/btsCN3sZtLM/5UZk5jBkKh6rmn7TJxbEnk/img_640x640.jpg', '카카오톡으로 가입한 너굴맨', 'ROLE_USER', '2024-07-08', 'kakao:3608933938'),
+       ('김네이', 'krossjsnet88@naver.com', '남자', 'https://phinf.pstatic.net/contact/20240708_176/1720409807264OBxd6_JPEG/image.jpg', '안녕하세요. 김네이 입니다.', 'ROLE_USER', '2024-07-08', 'naver:6UiaZlGUvWSdzpWSfBzzR06y4TsFfqNtrpbprYYfhoU'),
+       ('박카카', 'krossjsnet88@naver.com', '남자', 'http://k.kakaocdn.net/dn/bij2eY/btsCN3sZtLM/5UZk5jBkKh6rmn7TJxbEnk/img_640x640.jpg', '안녕하세요 박카카 입니다.', 'ROLE_USER', '2024-07-08', 'kakao:3608933938'),
+      ('최구글',	 'krossjsnet88@gmail.com',	'남자', 'https://firebasestorage.googleapis.com/v0/b/soop-profile-pic.appspot.com/o/profile_pictures%2F7_google.png?alt=media&token=b705a4d6-7439-418c-b9c4-854c9850efd8', '안녕하세요. 김구글 입니다.', 'ROLE_USER', '2024-07-11', 'google:115533031657766663228'),
        ('슈비두바', 'dldks1212@nate.com', '여자', 'https://phinf.pstatic.net/contact/20190306_75/1551853620079wDVcE_JPEG/profileImage.jpg', 'ㅁㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ', 'ROLE_USER', '2024-07-08', 'naver:-nuGj5lXJgGO9MlpeMOHuutROapMBFYiD012mndDPvE'),
 	   ('스드메의문단속', 'dldks1212@naver.com', '여자', 'http://k.kakaocdn.net/dn/UJ6yK/btsHywXr7Bq/MQCyj7Qx92a6EPrOonGkJK/img_640x640.jpg', '스드메의 문단속을 아시나요?', 'ROLE_USER', '2024-07-08', 'kakao:3613081929'),
 	   ('삔', 'goqlsdl0@naver.com', '여자', 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'hi', 'ROLE_USER', '2024-07-08', 'naver:SCyWPRsOey_GA6FO7dCXMM4cdABsWxpPfkvrWA9YgDc');
@@ -48,31 +49,31 @@ VALUES
 
 -- 허니팟 게시판 테이블 생성
 INSERT INTO HONEYPOT(INTEREST_CODE, HONEYPOT_TITLE, HONEYPOT_CONTENT, USER_CODE, POSTER, REGION, TOTAL_MEMBER, REG_DATE, EVENT_DATE, END_DATE, VISIBILITY_STATUS, CLOSURE_STATUS, REPORT_COUNT, SEQ_NO) VALUES
-(4, '경주어린이박물관학교 70주년, 함께 지킨 오랜 약속', '국립경주박물관에서 열리는 특별전에 함께 가요!', 2, 'http://www.culture.go.kr/upload/rdf/24/07/show_202407514595600096.jpg', '경북', 4, '2024-07-01', '2024-07-16', '2024-09-22', '활성화', '진행완료', null, 276153),
-(4, '갤러리 인사1010 기획전 김한기 <오즈의 과학자>', '갤러리 인사 1010에서 열리는 전시회에 같이 가요', 3, 'http://www.culture.go.kr/upload/rdf/24/07/show_2024070413495286462.jpg', '서울', 3, '2024-07-05', '2024-07-17', '2024-08-18', '활성화', '진행완료', null, 281960),
-(4, '2024 대한민국 우표전시회', '노들섬 복합문화공간에서 열리는 전시회에 같이 가실 분?', 4, 'http://www.culture.go.kr/upload/rdf/24/07/show_202407317272109874.jpg', '서울', 3, '2024-07-10', '2024-07-18', '2024-07-24', '활성화', '모집중', null, 280781),
-(2, '차 한 잔 하실래요?', '국립정동극장 세실에서 열리는 무용 공연 함께 즐겨요', 2, 'http://www.culture.go.kr/upload/rdf/24/06/show_2024061815282151579.jpg', '서울', 2, '2024-07-12', '2024-07-23', '2024-07-23', '활성화', '모집중', null, 280096),
-(2, '2024년 광명문화재단 7월 기획 공연 <WBG 트롬본 콰르텟 콘서트>', '광명시민회관 대공연장에서 열리는 트롬본 콘서트 같이 가실 분?', 3, 'http://www.culture.go.kr/upload/rdf/24/06/show_2024062415564581789.jpg', '경기', 4, '2024-07-08', '2024-07-19', '2024-07-19', '활성화', '모집중', null, 280798),
-(2, '[세종] 지브리 영화음악 심포니 콘서트 with 오케스트라', '세종예술의전당 대공연장에서 열리는 영화음악 콘서트에 함께해요', 4, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_2024061921182631620.gif', '세종', 3, '2024-07-11', '2024-07-19', '2024-07-19', '활성화', '모집중', null, 280393),
-(2, '[공주] 제198회 공주시충남교향악단 정기연주회: 비창의 미학', '공주문예회관 대공연장에서 열리는 오케스트라 공연 함께 볼까요?', 2, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_202406192119858675.gif', '충남', 4, '2024-07-09', '2024-07-19', '2024-07-19', '활성화', '모집중', null, 280419),
-(5, '옥주현 with Friends 뮤지컬 콘서트', '경기아트센터 대극장에서 열리는 옥주현의 뮤지컬 콘서트에 함께 가요!', 3, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_2024062121184045488.gif', '경기', 5, '2024-07-10', '2024-07-17', '2024-07-17', '활성화', '모집중', null, 280673),
-(3, '정희은 <연지> & 권미정 <먹이> - 제27회 크리틱스초이스댄스페스티벌 2024', '아르코예술극장 대극장에서 열리는 현대무용 공연을 함께 감상해요!', 2, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_202406172119278636.jpg', '서울', 3, '2024-07-10', '2024-07-17', '2024-07-18', '활성화', '모집중', null, 280164);
+(4, '70년 전으로 시간여행 갈래?', '국립경주박물관에서 열리는 특별전에 함께 가요!', 2, 'http://www.culture.go.kr/upload/rdf/24/07/show_202407514595600096.jpg', '경북', 4, '2024-07-01', '2024-07-10', '2024-07-09', '활성화', '진행완료', 0, 276153),
+(4, '오즈의 마법사? 아니, 과학자', '갤러리 인사 1010에서 열리는 전시회에 같이 가요', 3, 'http://www.culture.go.kr/upload/rdf/24/07/show_2024070413495286462.jpg', '서울', 3, '2024-07-01', '2024-07-10', '2024-07-09', '활성화', '진행완료', 0, 281960),
+(4, '우표 속 한국 찾기, 도전?', '노들섬 복합문화공간에서 열리는 전시회에 같이 가실 분?', 4, 'http://www.culture.go.kr/upload/rdf/24/07/show_202407317272109874.jpg', '서울', 3, '2024-07-10', '2024-07-18', '2024-07-17', '활성화', '모집중', 0, 280781),
+(2, '차 마시며 춤출 사람 구함!', '국립정동극장 세실에서 열리는 무용 공연 함께 즐겨요', 2, 'http://www.culture.go.kr/upload/rdf/24/06/show_2024061815282151579.jpg', '서울', 2, '2024-07-12', '2024-07-23', '2024-07-22', '활성화', '모집중', 0, 280096),
+(2, '황금 트롬본 소리에 취할래?', '광명시민회관 대공연장에서 열리는 트롬본 콘서트 같이 가실 분?', 3, 'http://www.culture.go.kr/upload/rdf/24/06/show_2024062415564581789.jpg', '경기', 4, '2024-07-08', '2024-07-19', '2024-07-18', '활성화', '모집중', 0, 280798),
+(2, '지브리 음악 여행 떠날 친구!', '세종예술의전당 대공연장에서 열리는 영화음악 콘서트에 함께해요', 4, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_2024061921182631620.gif', '세종', 3, '2024-07-11', '2024-07-19', '2024-07-18', '활성화', '모집중', 0, 280393),
+(2, '베토벤의 눈물 들으러 갈래?', '공주문예회관 대공연장에서 열리는 오케스트라 공연 함께 볼까요?', 2, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_202406192119858675.gif', '충남', 4, '2024-07-09', '2024-07-19', '2024-07-18', '활성화', '모집중', 0, 280419),
+(5, '옥주현과 뮤지컬 파티 올래?', '경기아트센터 대극장에서 열리는 옥주현의 뮤지컬 콘서트에 함께 가요!', 3, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_2024062121184045488.gif', '경기', 2, '2024-07-10', '2024-07-17', '2024-07-16', '활성화', '모집중', 0, 280673),
+(3, '현대무용으로 시 쓸 동료 구함', '아르코예술극장 대극장에서 열리는 현대무용 공연을 함께 감상해요!', 2, 'http://www.culture.go.kr/upload/rdf/24/06/rdf_202406172119278636.jpg', '서울', 3, '2024-07-10', '2024-07-17', '2024-07-16', '활성화', '모집중', 0, 280164);
 
 -- 승인 신청 데이터
--- INSERT
---   INTO
---  `APPLICATION`(HONEYPOT_CODE, USER_CODE, APPLICATION_DATE)
---  VALUES
---        (1, 3, '2024-07-03'),
--- 		(1, 4, '2024-07-03');        
+ INSERT
+   INTO
+  `APPLICATION`(HONEYPOT_CODE, USER_CODE, APPLICATION_DATE)
+  VALUES
+        (1, 3, '2024-07-03'),
+ 		(1, 4, '2024-07-03'); 
         
 -- 참가신청 DB
--- INSERT 
---   INTO
---  `APPROVAL_STATUS`(DECISION_STATUS, DECISION_DATE)
---  VALUES
---        ('승인', '2024-07-04', '2024-07-05'),
---        ('승인', '2024-07-04', '2024-07-05');
+ INSERT 
+   INTO
+  `APPROVAL_STATUS`(DECISION_STATUS, DECISION_DATE)
+  VALUES
+        ('승인', '2024-07-04'),
+        ('승인', '2024-07-04');
         
 -- UPDATE HONEYPOT
 --            SET CLOSURE_STATUS = '진행완료'
